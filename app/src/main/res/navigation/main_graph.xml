@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/wellcomeFragment">
+
+    <fragment
+        android:id="@+id/wellcomeFragment"
+        android:name="ir.mrjafari483.composeuiapplication.WellcomeFragment"
+        android:label="WellcomeFragment" >
+        <action
+            android:id="@+id/action_wellcomeFragment_to_sinIn"
+            app:destination="@id/sinIn"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/action_wellcomeFragment_to_sinUp"
+            app:destination="@id/sinUp" />
+    </fragment>
+    <fragment
+        android:id="@+id/sinIn"
+        android:name="ir.mrjafari483.composeuiapplication.SinIn"
+        android:label="SinIn" >
+        <action
+            android:id="@+id/action_sinIn_to_sinUp"
+            app:destination="@id/sinUp"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/sinUp"
+        android:name="ir.mrjafari483.composeuiapplication.SinUp"
+        android:label="SinUp" >
+        <action
+            android:id="@+id/action_sinUp_to_sinIn"
+            app:destination="@id/sinIn" />
+    </fragment>
+</navigation>
