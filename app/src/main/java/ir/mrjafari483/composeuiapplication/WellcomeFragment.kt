@@ -95,21 +95,7 @@ class WellcomeFragment : Fragment() {
                              ) {
                             Text(text = "Already have an account? ",fontFamily = FontFamily(Font(R.font.roboto_medium)) /*, color = colorResource(id = R.color.purple_700)*/)
                         }
-                        OutlinedButton(
-                            onClick = { /*TODO*/ },
-                            modifier = androidx.compose.ui.Modifier
-                                .height(50.dp)
-                                .fillMaxWidth()
-                                .offset(0.dp, 90.dp)
-                                .border(width = 2.dp, color = colorResource(id = R.color.white),shape = RoundedCornerShape(8.dp)),
-
-
-
-                            colors = ButtonDefaults.textButtonColors(
-                                backgroundColor = colorResource(id = R.color.purple_700)
-                            )) {
-                            Text(text = "Create an account" , color = colorResource(id = R.color.white),fontFamily = FontFamily(Font(R.font.roboto_medium)))
-                        }
+                     blueButton(text = "Create an account",90)
 
                     }
 
@@ -117,7 +103,7 @@ class WellcomeFragment : Fragment() {
                         horizontalArrangement = Arrangement.Center,
                         modifier = androidx.compose.ui.Modifier
                             .fillMaxWidth()
-                            .offset(0.dp,130.dp)
+                            .offset(0.dp, 130.dp)
                     ){
                         Text(text = "Already have an account?SinIn" , color = colorResource(id = R.color.white400),fontFamily = FontFamily(Font(R.font.roboto_light)))
                         Text(text = "SinIn" , color = colorResource(id = R.color.white),fontFamily = FontFamily(Font(R.font.roboto_medium)))
