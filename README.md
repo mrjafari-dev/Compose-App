@@ -1,2 +1,2 @@
 # Compose-App
-for test Compose jetPack :)
+test Jetpack Compose :)
